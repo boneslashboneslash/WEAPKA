@@ -1,0 +1,165 @@
+/* CSS Document */
+
+body{
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+
+}
+input,button
+{
+ font-family: 'Crimson Text', serif;
+}
+.js-container{
+ width: 100%;
+ margin: 20vh auto;
+}
+.js-container p{
+    font-size: 16px;
+    width: 24%;
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 5px;
+}
+#name {
+    display: block;
+    margin: auto;
+}
+#name p{
+    color: indigo;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.js-container h1{
+    font-size: 70px;
+    width: 60%;
+    text-align: center;
+    margin: auto auto 40px auto;
+}
+.js-container input[type=button]{
+ font-size: medium;
+ font-weight: bold;
+ background: lawngreen;
+ color: black;
+ border-radius: 2px;
+ padding: 10px;
+ display: inline-block;
+margin: auto auto auto 5px;
+width: 24%;
+}
+.js-container input[type=text]{
+    height: 25px;
+    font-size: larger;
+    width: 30%;
+    display: block;
+    margin: auto auto 40px auto;
+
+}
+.js-tasks-textbox{
+        padding:0;
+}
+
+.js-tasks-name{
+     display: block;
+     float: left;
+     border-color: black;
+     margin:auto ;
+     width:40%;
+     text-align: left;
+ }
+
+.js-tasks-complete-name{
+    float: right;
+    display: inline-grid;
+    border-color: black;
+    margin:auto;
+    width:40%;
+}
+
+.js-tasks-container {
+     display: block;
+     float: left;
+     border-color: black;
+     margin:auto;
+     width:40%;
+    text-align: left;
+ }
+
+.js-tasks-complete-container {
+    float: right;
+    display: inline-grid;
+    border-color: black;
+    margin:auto;
+    width:40%;
+    text-align: left;
+}
+
+.main-div{
+ margin: 10vh auto;
+ width: 30%;
+}
+.login-div{
+ margin: 10vh auto;
+ width: 100%;
+
+}
+
+.login-div h1
+{
+ text-align: center;
+}
+
+.main-div h1
+{
+ text-align: center;
+}
+.login-div button{
+ font-size: large;
+ background: rgb(0,0,255);
+ color: rgb(255,255,255);
+ border: 0;
+ border-radius: 5px;
+ padding: 15px;
+ display: block;
+ margin: auto;
+ width: 20%;
+ cursor: pointer;
+}
+
+.main-div input{
+ display: block;
+ border: 1px solid;
+ border-radius: 8px;
+ background: #fff;
+ padding: 10px;
+ width: 70%;
+ margin: auto;
+ margin-bottom:10px;
+ cursor: text;
+}
+.main-div button{
+ font-size: large;
+ background: rgb(0,0,255);
+ color: rgb(255,255,255);
+ border: 0;
+ border-radius: 5px;
+ padding: 15px;
+ display: block;
+ margin: auto;
+ width: 80%;
+ cursor: pointer;
+}
+.main-div button:hover
+{
+ background: rgb(255,255,0);
+ color: rgb(0,0,255);
+}
+.login-div button:hover
+{
+    background: rgb(255,255,0);
+    color: rgb(0,0,255);
+}

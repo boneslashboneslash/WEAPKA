@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title> TODO List Login</title>
+  <link rel= "stylesheet" type = "text/css" href= "style.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet"> 
+  </head>
+  <body>
+   <div id ="login_div" class= "main-div">
+   <h1> TODO List APP </h1>
+   <input type = "email" placeholder="lukas.soucek@tul.cz" id ="email_field"/>
+   <input type = "password" placeholder="password" id= "password_field"/>
+   <button id= "btnLogMe"> Log in to app </button>
+    </div>
+    <div id= "user_div" class= "login-div">
+   <h1> Welcome User You ARE currently logged in </h1>
+   <button id= "btnUnLogMe">Log out </button>
+    </div>
+   <div id= "task_div" class="js-container">
+       <h1> To-Do List </h1>
+         <input type="text" placeholder="Task name:" class="js-task-textbox"/>
+
+       <p>Fill in the textbox -> Press the button ADD without selecting any TASK</p>
+       <p>Select TASK for completing and press the button COMPLETE</p>
+       <p>Select TASK you want DELETE -> Press the button DELETE to delete certain task. OR Delete all Tasks by pressing button DELETE only</p>
+       <p>Fill in the textbox -> Select TASK you want EDIT -> Press the button EDIT to change selected TASK</p>
+       <input type="button" class="js-add-task-button" value="Add Task"/>
+       <input type="button" class="js-complete-task-button" value="Complete Tasks"/>
+       <input type="button" class="js-delete-task-button" value="Delete Tasks"/>
+       <input type="button" class="js-edit-task-button" value="Edit Tasks"/>
+
+
+                        <div class ="js-tasks-name"><h2>Incomplete tasks<h2></div>
+                        <div class ="js-tasks-complete-name"><h2>Complete tasks</h2></div>
+                      <div class ="js-tasks-complete-container">
+                       
+                      </div>
+                       
+                       <div class ="js-tasks-container"></div>
+   </div>
+
+
+   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+ <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD9r5AZOluHg4R5jCvsT4ICmx1bjdqPjWI",
+    authDomain: "todo-list-25c24.firebaseapp.com",
+    databaseURL: "https://todo-list-25c24.firebaseio.com",
+    projectId: "todo-list-25c24",
+    storageBucket: "todo-list-25c24.appspot.com",
+    messagingSenderId: "546389265895"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+   <script src="EventDispatcher.js"></script>
+   <script src="TaskModel.js"></script>
+   <script src="TaskView.js"></script>
+   <script src="TaskController.js"></script>
+   <script src="App.js"></script>
+   <script src="Login.js"></script>
+  </body>
+  
+</html>
